@@ -8,7 +8,7 @@
 /* font-family : police de caractères. Si Arial n'existe pas, le navigateur prend une police sans empattement; background-color : couleur de fond; color : couleur du texte; line-height : hauteur d'une ligne de texte. */
 body {
   font-family: Arial, sans-serif;
-  background-color: #e8f5e9;
+  background-color: #3a8b41;
   color: #333333;
   line-height: 1.6;
 }
@@ -64,7 +64,7 @@ h1 {
 
 .projet{
   text-align: left;
-  color: blue;
+  color: b;
 }
 
  /* padding-bottom : espace entre le texte et le trait */

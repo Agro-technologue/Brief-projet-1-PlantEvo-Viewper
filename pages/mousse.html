@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evolution des végétaux</title>
-    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
     
 </head>
 <body>
-    <nav>
-        <button>
+    <nav class="barre-nav">
             <a href="../menu.html">Retour au menu </a>
         </button>
     </nav>
+<main>
     <h1>MOUSSES</h1>
     <figure>
      <img src="../images/m1.jpg" height="320px" alt="Histoire des mousses" />
@@ -33,8 +33,16 @@
     <figcaption>Légende : Cycle de reproduction d'une mousse montrant le gamétophyte, la fécondation et la formation des spores.</figcaption>
     <p>La mousse se reproduit par des spores produites dans une capsule portée par le sporophyte.<br>En présence d'eau, les gamètes mâles peuvent rejoindre les gamètes femelles pour permettre la fécondation</p>
 
-    <a href="fougere.html">Groupe suivant</a> <br>
+    <!-- <div> : boîte qui regroupe les boutons de navigation entre groupes. class="navigation-groupes" : nom de style du CSS -->
+        <div class="navigation-groupes">
+            <!-- <a> : lien vers le groupe précédent. href : page de destination (même dossier). class="bouton" : style de bouton -->
+            <a class="bouton" href="algue.html">← Groupe précédent</a>
+            <!-- <a> : lien vers le groupe suivant. href : page de destination. class="bouton suivant" : style de bouton, placé à droite -->
+            <a class="bouton suivant" href="fougere.html">Groupe suivant →</a>
+</main>
 
-    <a href="algue.html">Groupe precédent</a>
+<footer>
+        <p>Projet académique : PlantEvo Viewer</p>
+</footer>
 </body>
 </html>

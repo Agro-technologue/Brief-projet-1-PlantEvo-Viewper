@@ -4,20 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evolution des végétaux</title>
-    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <nav>
-        <button>
+    <nav class="barre-nav">
             <a href="../menu.html">Retour au menu </a>
-        </button>
     </nav>
     <h1>COUNIFERES</h1>
     <figure>
      <img src="../images/c1.jpg" height="420px" alt="Histoire des fougères" />
      <img src="../images/c2.jpg" height="420px" alt="Histoire des fougères" />
     </figure>
-
+<main>
     <h2>PROBLEME RESOLU: se reproduire sans eau libre</h2>
     <p>Les conifères ont développé des innovations qui rendent leur reproduction moins dépendante de l'eau extérieure.<br>
          Le pollen transporte les éléments reproducteurs mâles, généralement grâce au vent. L'ovule est protégé et, après fécondation,<br>
@@ -37,7 +35,17 @@
          Le pollen atteint l'ovule situé sur une écaille du cône femelle et permet la fécondation sans qu'un film d'eau extérieur soit nécessaire. Après la fécondation, l'ovule se transforme en graine nue.<br>
           Lorsque les conditions sont favorables, cette graine peut germer et donner naissance à un nouveau conifère.</p>
 
-    <a href="graminee.html">Groupe suivant</a><br>
-    <a href="fougere.html">Groupe precédent</a>
+
+    <!-- <div> : boîte qui regroupe les boutons de navigation entre groupes. class="navigation-groupes" : nom de style du CSS -->
+        <div class="navigation-groupes">
+            <!-- <a> : lien vers le groupe précédent. href : page de destination (même dossier). class="bouton" : style de bouton -->
+            <a class="bouton" href="fougere.html">← Groupe précédent</a>
+            <!-- <a> : lien vers le groupe suivant. href : page de destination. class="bouton suivant" : style de bouton, placé à droite -->
+            <a class="bouton suivant" href="graminee.html">Groupe suivant →</a></a>
+</main>
+
+<footer>
+   <p>Projet académique : PlantEvo Viewer</p> 
+</footer>
 </body>
 </html>
