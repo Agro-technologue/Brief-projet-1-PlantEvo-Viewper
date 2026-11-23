@@ -1,0 +1,340 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+};
+
+/* font-family : police de caractères. Si Arial n'existe pas, le navigateur prend une police sans empattement; background-color : couleur de fond; color : couleur du texte; line-height : hauteur d'une ligne de texte. */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e8f5e9;
+  color: #333333;
+  line-height: 1.6;
+}
+
+/* <max-width> : largeur maximale du contenu; <margin> : la marge externe;  padding : espace intérieur */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* background-color : fond vert foncé; padding : 15 pixels en haut et en bas, 20 pixels à gauche et à droite  */
+header,
+.barre-nav {
+  background-color: #2e7d32;
+  padding: 15px 20px;
+}
+
+/* display: flex : place les liens côte à côte sur une ligne; justify-content : position horizontale des liens. flex-end = alignés à droite; gap : espace entre chaque lien */
+header nav,
+.barre-nav {
+  display: flex;
+  justify-content: flex-end;
+   gap: 25px;
+}
+/* color : couleur du texte du lien (blanc); font-size : taille du texte; font-weight : épaisseur du texte. bold = gras; text-decoration : none = on enlève le soulignement par défaut des liens */
+header nav a,
+.barre-nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* :hover = quand la souris passe sur l'élément, le lien devient jaune clair au survol*/
+header nav a:hover,
+.barre-nav a:hover {
+  color: #ffe082;
+}
+
+/* .actif : classe donnée au lien de la page où l'on se trouve; border-bottom : trait sous le lien */
+header nav a.actif {
+  border-bottom: 2px solid white;
+}
+
+/* text-align : alignement du texte. center = centré; font-size : taille du titre; margin : 20 pixels au-dessus et en dessous du titre, 0 à gauche et à droite */
+h1 {
+  text-align: center;
+  color: #1b5e20;
+  font-size: 32px;
+  margin: 20px 0;
+}
+
+.projet{
+  text-align: left;
+  color: blue;
+}
+
+ /* padding-bottom : espace entre le texte et le trait */
+h2 {
+  color: #2e7d32;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #a5d6a7;
+}
+
+p {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #c8e6c9;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* .accueil main : le contenu principal, uniquement sur la page d'accueil */
+.accueil main {
+  /* text-align : tout le texte de l'accueil est centré */
+  text-align: center;
+}
+
+/* h2 de l'accueil */
+.accueil h2 {
+  /* border-bottom : none = pas de trait sous ce titre */
+  border-bottom: none;
+  /* font-size : titre un peu plus grand */
+  font-size: 26px;
+}
+
+/* la grande image de l'accueil */
+.accueil main > img {
+  /* width : l'image prend toute la largeur disponible */
+  width: 100%;
+  /* height : hauteur fixe de 350 pixels */
+  height: 350px;
+}
+
+/* le bouton "Commencer l'exploration" */
+.accueil .bouton {
+  /* margin : espace au-dessus du bouton */
+  margin-top: 20px;
+  /* font-size : texte un peu plus grand */
+  font-size: 18px;
+}
+
+/* .disposition : la boîte (div) qui contient les 6 cartes */
+.disposition {
+  /* display: flex : cartes côte à côte */
+  display: flex;
+  /* flex-wrap : retour à la ligne quand la place manque */
+  flex-wrap: wrap;
+  /* justify-content : cartes centrées */
+  justify-content: center;
+  /* gap : espace entre les cartes */
+  gap: 20px;
+  /* margin : espace au-dessus et en dessous */
+  margin: 30px 0;
+}
+
+/* les liens autour des cartes */
+.disposition a {
+  /* text-decoration : pas de soulignement */
+  text-decoration: none;
+  /* color : couleur du texte (vert foncé) */
+  color: #1b5e20;
+}
+
+/* chaque carte (figure) */
+.disposition figure {
+  /* background-color : fond blanc */
+  background-color: white;
+  /* padding : espace entre la carte et l'image */
+  padding: 10px;
+  /* border : bordure fine vert clair */
+  border: 1px solid #c8e6c9;
+  /* border-radius : coins arrondis */
+  border-radius: 10px;
+}
+
+/* la carte change de couleur au survol de la souris */
+.disposition figure:hover {
+  /* background-color : fond vert clair */
+  background-color: #c8e6c9;
+}
+
+/* les images des cartes */
+.disposition img {
+  /* display: block : supprime le petit espace sous l'image */
+  display: block;
+  /* width : largeur de l'image */
+  width: 200px;
+  /* height : hauteur de l'image */
+  height: 260px;
+  /* object-fit : cover = image non déformée, un peu rognée si besoin */
+  object-fit: cover;
+  /* border-radius : coins arrondis */
+  border-radius: 8px;
+}
+
+/* le texte sous chaque image */
+.disposition figcaption {
+  /* text-align : texte centré */
+  text-align: center;
+  /* font-size : taille du texte */
+  font-size: 18px;
+  /* font-weight : texte en gras */
+  font-weight: bold;
+  /* margin-top : espace entre l'image et le texte */
+  margin-top: 8px;
+}
+
+footer {
+  /* background-color : fond vert foncé */
+  background-color: #2e7d32;
+  /* color : texte blanc */
+  color: white;
+  /* text-align : texte centré */
+  text-align: center;
+  /* padding : espace intérieur en haut et en bas */
+  padding: 15px;
+  /* margin-top : espace au-dessus du pied de page */
+  margin-top: 30px;
+}
+
+/* le paragraphe dans le footer : on enlève le style "carte blanche" des paragraphes */
+footer p {
+  /* background-color : none = pas de fond */
+  background-color: transparent;
+  /* border : none = pas de bordure */
+  border: none;
+  /* padding : pas d'espace intérieur */
+  padding: 0;
+  /* margin-bottom : pas d'espace en dessous */
+  margin-bottom: 0;
+}
+
+/* @media : les règles ci-dessous ne s'appliquent que si l'écran fait 600 pixels de large ou moins */
+@media (max-width: 600px) {
+
+  /* la navigation */
+  header nav,
+  .barre-retour {
+    /* justify-content : liens centrés */
+    justify-content: center;
+    /* flex-wrap : les liens passent à la ligne si besoin */
+    flex-wrap: wrap;
+    /* gap : espace plus petit entre les liens */
+    gap: 15px;
+  }
+
+  /* h1 : titre plus petit sur téléphone */
+  h1 {
+    /* font-size : taille réduite */
+    font-size: 24px;
+  }
+
+  /* les boutons précédent / suivant */
+  .navigation-groupes {
+    /* flex-direction : column = boutons l'un au-dessus de l'autre */
+    flex-direction: column;
+    /* gap : espace entre les deux boutons */
+    gap: 10px;
+  }
+
+  /* le bouton suivant */
+  .navigation-groupes .suivant {
+    /* margin-left : 0 = on annule le décalage à droite */
+    margin-left: 0;
+  }
+}
+
+
+/* ---------- 5. IMAGES DES PAGES DE GROUPES ---------- */
+
+/* main > figure : le groupe d'images placé en haut de chaque page de groupe ("<" = enfant direct de main) */
+main > figure {
+  /* display: flex : place les images côte à côte */
+  display: flex;
+  /* flex-wrap : wrap = si la place manque, les images passent à la ligne suivante */
+ 
+  /* justify-content : center = images centrées */
+ 
+  /* gap : espace entre les images */
+  gap: 10px;
+  /* margin : espace au-dessus et en dessous du groupe d'images */
+  margin: 15px 0;
+}
+
+/* les images à l'intérieur de ce groupe */
+main > figure img {
+  /* height : toutes les images ont la même hauteur */
+  height: 250px;
+  /* max-width : une image ne dépasse jamais la largeur de l'écran */
+  max-width: 100%;
+  /* object-fit : cover = l'image remplit sa boîte sans être déformée (elle peut être un peu rognée) */
+  object-fit: cover;
+  /* border-radius : coins arrondis */
+  border-radius: 8px;
+}
+
+/* main > img : les grandes images seules (appareil végétatif, cycle de reproduction) */
+main > img {
+  /* display: block : l'image occupe toute une ligne, ce qui permet de la centrer avec margin auto */
+  display: block;
+  /* margin : 15px en haut, auto à gauche et à droite (centrée), 5px en bas */
+  margin: 15px auto 5px auto;
+  /* max-width : ne dépasse jamais la largeur de la page */
+  max-width: 100%;
+  /* height : auto = la hauteur suit la largeur, l'image n'est pas déformée */
+  height: auto;
+  /* border-radius : coins arrondis */
+  border-radius: 8px;
+}
+
+/* main > figcaption : la légende placée sous une grande image */
+main > figcaption {
+  /* text-align : légende centrée */
+  text-align: center;
+  /* font-style : italic = texte en italique */
+  font-style: italic;
+  /* font-size : texte un peu plus petit */
+  font-size: 14px;
+  /* color : gris */
+  color: #555555;
+  /* margin-bottom : espace sous la légende */
+  margin-bottom: 15px;
+}
+
+
+/* ---------- 6. BOUTONS ET NAVIGATION ENTRE LES GROUPES ---------- */
+
+/* .bouton : classe qui transforme un lien en bouton */
+.bouton {
+  /* display: inline-block : le lien se comporte comme un bouton (on peut lui donner padding et hauteur) */
+  display: inline-block;
+  /* background-color : fond vert foncé */
+  background-color: #2e7d32;
+  /* color : texte blanc */
+  color: white;
+  /* padding : 10px en haut et en bas, 20px à gauche et à droite */
+  padding: 10px 20px;
+  /* border-radius : coins arrondis */
+  border-radius: 5px;
+  /* text-decoration : pas de soulignement */
+  text-decoration: none;
+  /* font-weight : texte en gras */
+  font-weight: bold;
+}
+
+/* le bouton change de couleur au survol de la souris */
+.bouton:hover {
+  /* background-color : vert encore plus foncé */
+  background-color: #1b5e20;
+}
+
+/* .navigation-groupes : la boîte (div) qui contient les boutons "précédent" et "suivant" */
+.navigation-groupes {
+  /* display: flex : les boutons sont placés sur la même ligne */
+  display: flex;
+  /* justify-content : space-between = un bouton à gauche, l'autre à droite */
+  justify-content: space-between;
+  /* margin : espace au-dessus et en dessous */
+  margin: 30px 0;
+}
+
+/* .suivant : le bouton "Groupe suivant" */
+.navigation-groupes .suivant {
+  /* margin-left : auto = le bouton se place à droite, même quand il est seul (page des algues) */
+  margin-left: auto;
+}
+
